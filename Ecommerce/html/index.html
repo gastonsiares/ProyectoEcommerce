@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <title>Tienda 5-5</title>
+    
+    <link rel="stylesheet" href="/Ecommerce/css/styles.css">
+    
+    
+</head>
+<!--Ctrl + K + C para comentar para descomentar Ctrl + K + U-->
+<body data-bs-theme="dark">
+
+    
+
+    <!-- Navbar -->
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registro</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="monitores.html">Monitores</a></li>
+                  <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                  <li><a class="dropdown-item" href="componentespc.html">Componentes de PC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <header>
+        
+        <nav>
+            <div class="logo">
+                <h1>Tienda 5-5</h1>
+            </div>
+            <ul>
+                
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="componentespc.html">Componentes de PC</a></li>
+                <li><a href="monitores.html">Monitores</a></li>
+                <li><a href="perifericos.html">Perifericos</a></li>
+                 
+                <li id="userName" style="float:right; margin-left: 1000px;"></li>
+                <li><a href="#" id="logoutButton">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="container-fluid">
+            
+            <div class="ccontainer-fluid">
+                <h2>Bienvenidos a tienda 5-5 lo mejor en tecnologia lo vas a encontrar aca</h2>
+                <p>Encontra los mejores productos aca.</p>
+            </div>
+            
+            
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col h-100">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="/img/auricular.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Auriculares Hyperx Cloud Iii Red DTS</h5>
+                          <p class="card-text">Los Headset Audífonos Gamer Hyperx Cloud Iii 3 Color Black/red son el complemento perfecto para los amantes de los videojuegos.</p>
+                          <a href="perifericos.html" class="btn btn-primary">Entra a ver mas</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col h-100">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="/img/Monitor samsung.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Monitor Samsung Odyssey G4 S25BG40 25"</h5>
+                          <p class="card-text">Experimenta tus juegos con una calidad visual excepcional. El panel IPS ofrece colores vivos y un amplio ángulo de visión de 178º, asegurando claridad desde cualquier perspectiva. Tasa de refresco de 240Hz y 1ms de tiempo de respuesta.</p>
+                          <a href="monitores.html" class="btn btn-primary">Entra a ver mas</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col h-100">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="/img/mother.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Placa Madre Asus Tuf Gaming B450m</h5>
+                          <p class="card-text">Placa Madre Asus Tuf Gaming B450m Plus 2 Ryzen M.2 Usb 3.2</p>
+                          <a href="componentespc.html" class="btn btn-primary">Entra a ver mas</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda 5-5. Todos los derechos reservados.</p>
+    </footer> 
+
+    
+
+<!-- Zona de importaciones JS -->
+<!-- <script>
+    // Mostrar el nombre del usuario logueado en el navbar
+    const nombreUsuario = localStorage.getItem('nombreUsuario');
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    // Si está logueado, mostrar su nombre en el navbar
+    if (isLoggedIn) {
+        document.getElementById('userName').innerText = `Hola, ${nombreUsuario}`;
+    } else {
+        document.getElementById('userName').innerText = 'No has iniciado sesión';
+    }
+
+    // Botón de logout: Permitir que el usuario cierre sesión sin redirigir
+    document.getElementById('logoutButton').addEventListener('click', function() {
+        localStorage.removeItem('isLoggedIn'); // Eliminar estado de login
+        document.getElementById('userName').innerText = 'Has cerrado sesión';
+    });
+</script> -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
